@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - Sistema de Citas Médicas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🏥 Sistema de Citas Médicas</h1>
+    <p>Agendamiento de citas</p>
+</header>
+
+<main class="contenedor">
+
+    <section class="bienvenida">
+
+        <h2>Agendar una cita médica</h2>
+
+        <form id="formCita">
+
+            <label for="paciente">Nombre del paciente</label>
+            <br>
+            <input type="text" id="paciente"
+                   placeholder="Ingrese el nombre del paciente" required>
+
+            <br><br>
+
+            <label for="medico">Seleccione el médico</label>
+            <br>
+            <select id="medico" required>
+                <option value="">Seleccione un médico</option>
+                <option value="medico1">Dr. Carlos Rodríguez - Medicina General</option>
+                <option value="medico2">Dra. Laura Martínez - Pediatría</option>
+                <option value="medico3">Dr. Andrés Gómez - Cardiología</option>
+            </select>
+
+            <br><br>
+
+            <label for="fecha">Fecha de la cita</label>
+            <br>
+            <input type="date" id="fecha" required>
+
+            <br><br>
+
+            <label for="hora">Hora de la cita</label>
+            <br>
+            <input type="time" id="hora" required>
+
+            <br><br>
+
+            <label for="motivo">Motivo de la consulta</label>
+            <br>
+            <textarea id="motivo"
+                      placeholder="Describa brevemente el motivo de la consulta"
+                      rows="4"
+                      required></textarea>
+
+            <br><br>
+
+            <button type="submit" class="boton">
+                Agendar cita
+            </button>
+
+        </form>
+
+        <br>
+
+        <a href="mis-citas.html" class="boton secundario">
+            Ver mis citas
+        </a>
+
+        <br><br>
+
+        <a href="index.html">
+            Volver al inicio
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Sistema de Gestión de Citas Médicas</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
